@@ -9,7 +9,7 @@ $(document).ready(function(){
                 console.log(response);
                 $('#todo-list').empty();
                 response.tasks.forEach(function(task){
-                    $('#todo-list').append('<div class="row"><p class ="col-xs-8">' + task.content + '</p><button class="delete" data-id="' + task.id + '">Delete</button><input type="checkbox" class="mark-complete" data-id="' + task.id + '"' + (task.completed ? 'checked' : '') + '>');
+                    $('#todo-list').append('<div class="row"><p class ="col-xs-10 taskContent">' + task.content + '</p><button class="delete" data-id="' + task.id + '">Delete</button><input type="checkbox" class="mark-complete check" data-id="' + task.id + '"' + (task.completed ? 'checked' : '') + '>');
                 })
             },
             error: function(request, textStatus, errorMessage) {

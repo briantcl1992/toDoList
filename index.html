@@ -14,13 +14,17 @@
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          <h2>To Do List</h2>
-          <div id="todo-list">
+          <div id="titleWrapper">
+            <h2 id="title" class="text-center">To Dos</h2>
           </div>
-          <form id="create-task">
-            <input type="text" id="new-task-content" placeholder='new task' required/>
-            <button>Create</button>
-          </form>
+          <div id="todoWrapper">
+            <div id="todo-list">
+            </div>
+            <form id="create-task">
+              <input type="text" id="new-task-content" placeholder='new task' required/>
+              <button class="create">Create</button>
+            </form>
+          </div>
         </div>
       </div>
     </div>
